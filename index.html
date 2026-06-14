@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hearteu 🌻</title>
+    <meta name="description" content="A romantic digital tribute for the one who makes my world brighter.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="intro-active">
+
+    <!-- Intro Screen Overlay -->
+    <div id="intro-screen">
+        <!-- Confetti & Streamers background decoration -->
+        <div class="intro-confetti-bg">
+            <!-- Confetti 1 -->
+            <svg class="confetti confetti-1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 0 L60 35 L95 35 L65 55 L75 90 L50 70 L25 90 L35 55 L5 35 L40 35 Z" fill="#ffb3c6" />
+            </svg>
+            <!-- Confetti 2 (heart) -->
+            <svg class="confetti confetti-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12,30 C12,15 35,10 50,30 C65,10 88,15 88,30 C88,60 50,90 50,90 C50,90 12,60 12,30 Z" fill="#ff85a2" />
+            </svg>
+            <!-- Confetti 3 (streamer) -->
+            <svg class="streamer streamer-1" viewBox="0 0 50 150" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25 0 Q40 30 10 60 T40 120 T25 150" fill="none" stroke="#ffe5ec" stroke-width="6" stroke-linecap="round" />
+            </svg>
+            <!-- Confetti 4 (streamer) -->
+            <svg class="streamer streamer-2" viewBox="0 0 50 150" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25 0 Q10 30 40 60 T10 120 T25 150" fill="none" stroke="#ffc2d1" stroke-width="6" stroke-linecap="round" />
+            </svg>
+            <!-- Confetti 5 -->
+            <svg class="confetti confetti-3" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="30" fill="#ffe5ec" />
+            </svg>
+            <!-- Confetti 6 -->
+            <svg class="confetti confetti-4" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M50 0 L60 35 L95 35 L65 55 L75 90 L50 70 L25 90 L35 55 L5 35 L40 35 Z" fill="#ffccd5" />
+            </svg>
+            <!-- Confetti 7 (heart) -->
+            <svg class="confetti confetti-5" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12,30 C12,15 35,10 50,30 C65,10 88,15 88,30 C88,60 50,90 50,90 C50,90 12,60 12,30 Z" fill="#f72585" opacity="0.6" />
+            </svg>
+        </div>
+
+        <!-- Left Balloon Group (3 balloons with swaying animations) -->
+        <div class="balloon-group left-balloons">
+            <!-- Balloon 1 -->
+            <div class="balloon-wrapper balloon-1">
+                <svg class="balloon-svg" viewBox="0 0 100 250" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="balloon-pink-1" cx="35%" cy="35%" r="55%">
+                            <stop offset="0%" stop-color="#fff0f3" />
+                            <stop offset="30%" stop-color="#ffb3c6" />
+                            <stop offset="80%" stop-color="#ff4d6d" />
+                            <stop offset="100%" stop-color="#c9184a" />
+                        </radialGradient>
+                    </defs>
+                    <ellipse cx="50" cy="70" rx="40" ry="50" fill="url(#balloon-pink-1)" />
+                    <!-- Balloon knot/triangle -->
+                    <polygon points="50,118 45,125 55,125" fill="#c9184a" />
+                    <!-- String -->
+                    <path d="M50,125 Q55,160 45,190 T50,250" fill="none" stroke="#e0aaff" stroke-width="2" />
+                </svg>
+            </div>
+            <!-- Balloon 2 -->
+            <div class="balloon-wrapper balloon-2">
+                <svg class="balloon-svg" viewBox="0 0 100 250" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="balloon-pink-2" cx="35%" cy="35%" r="55%">
+                            <stop offset="0%" stop-color="#fff0f3" />
+                            <stop offset="35%" stop-color="#ffc2d1" />
+                            <stop offset="85%" stop-color="#ff758f" />
+                            <stop offset="100%" stop-color="#a4133c" />
+                        </radialGradient>
+                    </defs>
+                    <ellipse cx="50" cy="70" rx="36" ry="46" fill="url(#balloon-pink-2)" />
+                    <polygon points="50,114 46,120 54,120" fill="#a4133c" />
+                    <path d="M50,120 Q45,160 55,195 T50,250" fill="none" stroke="#e0aaff" stroke-width="1.8" />
+                </svg>
+            </div>
+            <!-- Balloon 3 -->
+            <div class="balloon-wrapper balloon-3">
+                <svg class="balloon-svg" viewBox="0 0 100 250" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="balloon-pink-3" cx="35%" cy="35%" r="55%">
+                            <stop offset="0%" stop-color="#fff5f7" />
+                            <stop offset="25%" stop-color="#ff85a2" />
+                            <stop offset="80%" stop-color="#f72585" />
+                            <stop offset="100%" stop-color="#b5179e" />
+                        </radialGradient>
+                    </defs>
+                    <ellipse cx="50" cy="70" rx="38" ry="48" fill="url(#balloon-pink-3)" />
+                    <polygon points="50,116 45,122 55,122" fill="#f72585" />
+                    <path d="M50,122 Q52,150 48,185 T50,250" fill="none" stroke="#e0aaff" stroke-width="2" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Center Envelope Container -->
+        <div class="envelope-container">
+            <div class="envelope-back-bg">
+                <svg class="envelope-svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Envelope Inner Back (dark pink/rose) -->
+                    <path d="M 40,120 L 40,270 C 40,275 45,280 50,280 L 350,280 C 355,280 360,275 360,270 L 360,120 Z" fill="#9d0208" />
+                    <!-- Open flap (pointing up, slightly darker shadow pink) -->
+                    <path d="M 40,120 L 200,20 L 360,120 Z" fill="#6a040f" />
+                </svg>
+            </div>
+
+            <!-- Card/Letter popping out -->
+            <div class="envelope-card">
+                <h2 class="card-title">Happy Birthday,</h2>
+                <h2 class="card-subtitle">Love!</h2>
+            </div>
+
+            <div class="envelope-front-bg">
+                <svg class="envelope-svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Left flap -->
+                    <path d="M 40,120 L 200,200 L 40,280 Z" fill="#ff758f" />
+                    <!-- Right flap -->
+                    <path d="M 360,120 L 200,200 L 360,280 Z" fill="#ff758f" />
+                    <!-- Bottom flap (medium vibrant pink) -->
+                    <path d="M 40,280 C 40,280 45,280 50,280 L 350,280 C 355,280 360,280 360,280 L 200,185 Z" fill="#ff4d6d" />
+                </svg>
+            </div>
+        </div>
+
+        <!-- Interactive Click Button -->
+        <div class="intro-action-container">
+            <span class="click-instruction">tap on the letter for more</span>
+            <button id="click-more-btn" class="btn-glow-pink">Click for More</button>
+        </div>
+
+        <!-- Right Balloon Group (3 balloons with swaying animations) -->
+        <div class="balloon-group right-balloons">
+            <!-- Balloon 4 -->
+            <div class="balloon-wrapper balloon-4">
+                <svg class="balloon-svg" viewBox="0 0 100 250" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="balloon-pink-4" cx="35%" cy="35%" r="55%">
+                            <stop offset="0%" stop-color="#fff0f3" />
+                            <stop offset="30%" stop-color="#ffb3c6" />
+                            <stop offset="80%" stop-color="#ff4d6d" />
+                            <stop offset="100%" stop-color="#c9184a" />
+                        </radialGradient>
+                    </defs>
+                    <ellipse cx="50" cy="70" rx="39" ry="49" fill="url(#balloon-pink-4)" />
+                    <polygon points="50,117 46,124 54,124" fill="#c9184a" />
+                    <path d="M50,124 Q48,155 52,190 T50,250" fill="none" stroke="#e0aaff" stroke-width="2" />
+                </svg>
+            </div>
+            <!-- Balloon 5 -->
+            <div class="balloon-wrapper balloon-5">
+                <svg class="balloon-svg" viewBox="0 0 100 250" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="balloon-pink-5" cx="35%" cy="35%" r="55%">
+                            <stop offset="0%" stop-color="#fff5f7" />
+                            <stop offset="25%" stop-color="#ff85a2" />
+                            <stop offset="80%" stop-color="#f72585" />
+                            <stop offset="100%" stop-color="#b5179e" />
+                        </radialGradient>
+                    </defs>
+                    <ellipse cx="50" cy="70" rx="35" ry="45" fill="url(#balloon-pink-5)" />
+                    <polygon points="50,113 46,119 54,119" fill="#f72585" />
+                    <path d="M50,119 Q54,155 46,190 T50,250" fill="none" stroke="#e0aaff" stroke-width="1.8" />
+                </svg>
+            </div>
+            <!-- Balloon 6 -->
+            <div class="balloon-wrapper balloon-6">
+                <svg class="balloon-svg" viewBox="0 0 100 250" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="balloon-pink-6" cx="35%" cy="35%" r="55%">
+                            <stop offset="0%" stop-color="#fff0f3" />
+                            <stop offset="35%" stop-color="#ffc2d1" />
+                            <stop offset="85%" stop-color="#ff758f" />
+                            <stop offset="100%" stop-color="#a4133c" />
+                        </radialGradient>
+                    </defs>
+                    <ellipse cx="50" cy="70" rx="37" ry="47" fill="url(#balloon-pink-6)" />
+                    <polygon points="50,115 45,121 55,121" fill="#a4133c" />
+                    <path d="M50,121 Q46,150 54,185 T50,250" fill="none" stroke="#e0aaff" stroke-width="2" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <!-- Mini Music Player Card -->
+    <div class="music-player-card" id="music-card">
+        <div class="music-info">
+            <span class="music-icon"><i class="fas fa-music"></i></span>
+            <div class="music-text">
+                <span class="music-title">It Might Be You 🎵</span>
+                <span class="music-artist">Stephen Bishop</span>
+            </div>
+        </div>
+        <div class="player-frame-container">
+            <iframe id="music-iframe" src="about:blank" frameborder="0" allow="autoplay"></iframe>
+        </div>
+    </div>
+
+
+    <!-- Hero Section with 3D Carousel -->
+    <section class="hero" id="hero">
+        <div class="carousel-3d-wrapper">
+            <div class="carousel-3d-container">
+                <div class="carousel-card" style="background-image: url('assets/1.png');"></div>
+                <div class="carousel-card" style="background-image: url('assets/2.png');"></div>
+                <div class="carousel-card" style="background-image: url('assets/3.png');"></div>
+                <div class="carousel-card" style="background-image: url('assets/4.png');"></div>
+            </div>
+            <!-- Navigation Arrows -->
+            <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="hero-content">
+            <h1>Happy Birthday, My Hearteu</h1>
+        </div>
+    </section>
+
+    <!-- Memory Gallery Section -->
+    <section id="gallery" class="heart-gallery-section">
+        <!-- Watercolor Floral Corner Decorations -->
+        <div class="floral-deco top-left">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="watercolor-blur-tl" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="5" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                    </filter>
+                    <radialGradient id="center-glow-tl" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ffd700" stop-opacity="0.9"/>
+                        <stop offset="40%" stop-color="#ffd700" stop-opacity="0.4"/>
+                        <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+                    </radialGradient>
+                </defs>
+                <g opacity="0.6" filter="url(#watercolor-blur-tl)">
+                    <path d="M 100,100 C 80,60 60,50 45,70 C 35,80 45,95 100,100 Z" fill="#6b8e23" />
+                    <path d="M 100,100 C 120,60 140,50 155,70 C 165,80 155,95 100,100 Z" fill="#556b2f" />
+                    <path d="M 100,100 C 60,120 50,140 70,155 C 80,165 95,155 100,100 Z" fill="#8fbc8f" />
+                    <path d="M 100,100 C 140,120 150,140 130,155 C 120,165 105,155 100,100 Z" fill="#6b8e23" />
+                </g>
+                <g opacity="0.75" filter="url(#watercolor-blur-tl)">
+                    <path d="M 100,100 C 65,65 50,25 100,25 C 150,25 135,65 100,100 Z" fill="#ff85a2" />
+                    <path d="M 100,100 C 135,65 175,50 175,100 C 175,150 135,135 100,100 Z" fill="#ffccd5" />
+                    <path d="M 100,100 C 135,135 150,175 100,175 C 50,175 65,135 100,100 Z" fill="#f72585" />
+                    <path d="M 100,100 C 65,135 25,175 25,100 C 25,50 65,65 100,100 Z" fill="#ff4d6d" />
+                    <path d="M 100,100 C 75,75 70,45 100,45 C 130,45 125,75 100,100 Z" fill="#ffb3c6" opacity="0.8" />
+                    <path d="M 100,100 C 125,75 155,70 155,100 C 155,130 125,125 100,100 Z" fill="#fff0f3" opacity="0.8" />
+                    <path d="M 100,100 C 125,125 130,155 100,155 C 70,155 75,125 100,100 Z" fill="#ff758f" opacity="0.8" />
+                    <path d="M 100,100 C 75,125 45,130 45,100 C 45,70 75,75 100,100 Z" fill="#ffe5ec" opacity="0.8" />
+                </g>
+                <circle cx="100" cy="100" r="16" fill="url(#center-glow-tl)" />
+                <circle cx="100" cy="100" r="5" fill="#ffd700" opacity="0.9" />
+            </svg>
+        </div>
+        <div class="floral-deco top-right">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="watercolor-blur-tr" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="5" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                    </filter>
+                    <radialGradient id="center-glow-tr" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ffd700" stop-opacity="0.9"/>
+                        <stop offset="40%" stop-color="#ffd700" stop-opacity="0.4"/>
+                        <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+                    </radialGradient>
+                </defs>
+                <g opacity="0.6" filter="url(#watercolor-blur-tr)">
+                    <path d="M 100,100 C 80,60 60,50 45,70 C 35,80 45,95 100,100 Z" fill="#6b8e23" />
+                    <path d="M 100,100 C 120,60 140,50 155,70 C 165,80 155,95 100,100 Z" fill="#556b2f" />
+                    <path d="M 100,100 C 60,120 50,140 70,155 C 80,165 95,155 100,100 Z" fill="#8fbc8f" />
+                    <path d="M 100,100 C 140,120 150,140 130,155 C 120,165 105,155 100,100 Z" fill="#6b8e23" />
+                </g>
+                <g opacity="0.75" filter="url(#watercolor-blur-tr)">
+                    <path d="M 100,100 C 65,65 50,25 100,25 C 150,25 135,65 100,100 Z" fill="#ff85a2" />
+                    <path d="M 100,100 C 135,65 175,50 175,100 C 175,150 135,135 100,100 Z" fill="#ffccd5" />
+                    <path d="M 100,100 C 135,135 150,175 100,175 C 50,175 65,135 100,100 Z" fill="#f72585" />
+                    <path d="M 100,100 C 65,135 25,175 25,100 C 25,50 65,65 100,100 Z" fill="#ff4d6d" />
+                    <path d="M 100,100 C 75,75 70,45 100,45 C 130,45 125,75 100,100 Z" fill="#ffb3c6" opacity="0.8" />
+                    <path d="M 100,100 C 125,75 155,70 155,100 C 155,130 125,125 100,100 Z" fill="#fff0f3" opacity="0.8" />
+                    <path d="M 100,100 C 125,125 130,155 100,155 C 70,155 75,125 100,100 Z" fill="#ff758f" opacity="0.8" />
+                    <path d="M 100,100 C 75,125 45,130 45,100 C 45,70 75,75 100,100 Z" fill="#ffe5ec" opacity="0.8" />
+                </g>
+                <circle cx="100" cy="100" r="16" fill="url(#center-glow-tr)" />
+                <circle cx="100" cy="100" r="5" fill="#ffd700" opacity="0.9" />
+            </svg>
+        </div>
+        <div class="floral-deco bottom-left">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="watercolor-blur-bl" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="5" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                    </filter>
+                    <radialGradient id="center-glow-bl" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ffd700" stop-opacity="0.9"/>
+                        <stop offset="40%" stop-color="#ffd700" stop-opacity="0.4"/>
+                        <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+                    </radialGradient>
+                </defs>
+                <g opacity="0.6" filter="url(#watercolor-blur-bl)">
+                    <path d="M 100,100 C 80,60 60,50 45,70 C 35,80 45,95 100,100 Z" fill="#6b8e23" />
+                    <path d="M 100,100 C 120,60 140,50 155,70 C 165,80 155,95 100,100 Z" fill="#556b2f" />
+                    <path d="M 100,100 C 60,120 50,140 70,155 C 80,165 95,155 100,100 Z" fill="#8fbc8f" />
+                    <path d="M 100,100 C 140,120 150,140 130,155 C 120,165 105,155 100,100 Z" fill="#6b8e23" />
+                </g>
+                <g opacity="0.75" filter="url(#watercolor-blur-bl)">
+                    <path d="M 100,100 C 65,65 50,25 100,25 C 150,25 135,65 100,100 Z" fill="#ff85a2" />
+                    <path d="M 100,100 C 135,65 175,50 175,100 C 175,150 135,135 100,100 Z" fill="#ffccd5" />
+                    <path d="M 100,100 C 135,135 150,175 100,175 C 50,175 65,135 100,100 Z" fill="#f72585" />
+                    <path d="M 100,100 C 65,135 25,175 25,100 C 25,50 65,65 100,100 Z" fill="#ff4d6d" />
+                    <path d="M 100,100 C 75,75 70,45 100,45 C 130,45 125,75 100,100 Z" fill="#ffb3c6" opacity="0.8" />
+                    <path d="M 100,100 C 125,75 155,70 155,100 C 155,130 125,125 100,100 Z" fill="#fff0f3" opacity="0.8" />
+                    <path d="M 100,100 C 125,125 130,155 100,155 C 70,155 75,125 100,100 Z" fill="#ff758f" opacity="0.8" />
+                    <path d="M 100,100 C 75,125 45,130 45,100 C 45,70 75,75 100,100 Z" fill="#ffe5ec" opacity="0.8" />
+                </g>
+                <circle cx="100" cy="100" r="16" fill="url(#center-glow-bl)" />
+                <circle cx="100" cy="100" r="5" fill="#ffd700" opacity="0.9" />
+            </svg>
+        </div>
+        <div class="floral-deco bottom-right">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="watercolor-blur-br" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="5" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                    </filter>
+                    <radialGradient id="center-glow-br" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ffd700" stop-opacity="0.9"/>
+                        <stop offset="40%" stop-color="#ffd700" stop-opacity="0.4"/>
+                        <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+                    </radialGradient>
+                </defs>
+                <g opacity="0.6" filter="url(#watercolor-blur-br)">
+                    <path d="M 100,100 C 80,60 60,50 45,70 C 35,80 45,95 100,100 Z" fill="#6b8e23" />
+                    <path d="M 100,100 C 120,60 140,50 155,70 C 165,80 155,95 100,100 Z" fill="#556b2f" />
+                    <path d="M 100,100 C 60,120 50,140 70,155 C 80,165 95,155 100,100 Z" fill="#8fbc8f" />
+                    <path d="M 100,100 C 140,120 150,140 130,155 C 120,165 105,155 100,100 Z" fill="#6b8e23" />
+                </g>
+                <g opacity="0.75" filter="url(#watercolor-blur-br)">
+                    <path d="M 100,100 C 65,65 50,25 100,25 C 150,25 135,65 100,100 Z" fill="#ff85a2" />
+                    <path d="M 100,100 C 135,65 175,50 175,100 C 175,150 135,135 100,100 Z" fill="#ffccd5" />
+                    <path d="M 100,100 C 135,135 150,175 100,175 C 50,175 65,135 100,100 Z" fill="#f72585" />
+                    <path d="M 100,100 C 65,135 25,175 25,100 C 25,50 65,65 100,100 Z" fill="#ff4d6d" />
+                    <path d="M 100,100 C 75,75 70,45 100,45 C 130,45 125,75 100,100 Z" fill="#ffb3c6" opacity="0.8" />
+                    <path d="M 100,100 C 125,75 155,70 155,100 C 155,130 125,125 100,100 Z" fill="#fff0f3" opacity="0.8" />
+                    <path d="M 100,100 C 125,125 130,155 100,155 C 70,155 75,125 100,100 Z" fill="#ff758f" opacity="0.8" />
+                    <path d="M 100,100 C 75,125 45,130 45,100 C 45,70 75,75 100,100 Z" fill="#ffe5ec" opacity="0.8" />
+                </g>
+                <circle cx="100" cy="100" r="16" fill="url(#center-glow-br)" />
+                <circle cx="100" cy="100" r="5" fill="#ffd700" opacity="0.9" />
+            </svg>
+        </div>
+
+        <h2 class="section-title">Common Captured Moments ✨</h2>
+        
+        <div class="heart-grid-container">
+            <div class="heart-grid">
+                <!-- Row 1 -->
+                <div class="heart-card card-1">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Day We First Met" class="heart-photo">
+                    <div class="heart-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span class="heart-overlay-caption">Day We First Met</span>
+                    </div>
+                </div>
+                <div class="heart-card card-2">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Our First Date" class="heart-photo">
+                    <div class="heart-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span class="heart-overlay-caption">Our First Date</span>
+                    </div>
+                </div>
+                
+                <!-- Row 2 -->
+                <div class="heart-card card-3">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Late Night Talks" class="heart-photo">
+                    <div class="heart-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span class="heart-overlay-caption">Late Night Talks</span>
+                    </div>
+                </div>
+                <div class="heart-card card-4">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Our First Adventure" class="heart-photo">
+                    <div class="heart-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span class="heart-overlay-caption">Our First Adventure</span>
+                    </div>
+                </div>
+                <div class="heart-card card-5">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Sweetest Smile" class="heart-photo">
+                    <div class="heart-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span class="heart-overlay-caption">Sweetest Smile</span>
+                    </div>
+                </div>
+                
+                <!-- Row 3 -->
+                <div class="heart-card card-6">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Silly Moments" class="heart-photo">
+                    <div class="heart-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span class="heart-overlay-caption">Silly Moments</span>
+                    </div>
+                </div>
+                <div class="heart-card card-7">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Under the Stars" class="heart-photo">
+                    <div class="heart-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span class="heart-overlay-caption">Under the Stars</span>
+                    </div>
+                </div>
+                <div class="heart-card card-8">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Every Little Thing" class="heart-photo">
+                    <div class="heart-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span class="heart-overlay-caption">Every Little Thing</span>
+                    </div>
+                </div>
+                
+                <!-- Row 4 -->
+                <div class="heart-card card-9">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Growing Together" class="heart-photo">
+                    <div class="heart-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span class="heart-overlay-caption">Growing Together</span>
+                    </div>
+                </div>
+                <div class="heart-card card-10">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Side by Side" class="heart-photo">
+                    <div class="heart-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span class="heart-overlay-caption">Side by Side</span>
+                    </div>
+                </div>
+                
+                <!-- Row 5 -->
+                <div class="heart-card card-11">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Forever & Always" class="heart-photo">
+                    <div class="heart-overlay">
+                        <i class="fas fa-camera"></i>
+                        <span class="heart-overlay-caption">Forever & Always</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letter Section -->
+    <section class="letter-section">
+        <!-- Watercolor Floral background decorations -->
+        <div class="floral-deco top-right">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="watercolor-blur-ltr" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="5" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                    </filter>
+                    <radialGradient id="center-glow-ltr" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ffd700" stop-opacity="0.9"/>
+                        <stop offset="40%" stop-color="#ffd700" stop-opacity="0.4"/>
+                        <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+                    </radialGradient>
+                </defs>
+                <g opacity="0.6" filter="url(#watercolor-blur-ltr)">
+                    <path d="M 100,100 C 80,60 60,50 45,70 C 35,80 45,95 100,100 Z" fill="#6b8e23" />
+                    <path d="M 100,100 C 120,60 140,50 155,70 C 165,80 155,95 100,100 Z" fill="#556b2f" />
+                    <path d="M 100,100 C 60,120 50,140 70,155 C 80,165 95,155 100,100 Z" fill="#8fbc8f" />
+                    <path d="M 100,100 C 140,120 150,140 130,155 C 120,165 105,155 100,100 Z" fill="#6b8e23" />
+                </g>
+                <g opacity="0.75" filter="url(#watercolor-blur-ltr)">
+                    <path d="M 100,100 C 65,65 50,25 100,25 C 150,25 135,65 100,100 Z" fill="#ff85a2" />
+                    <path d="M 100,100 C 135,65 175,50 175,100 C 175,150 135,135 100,100 Z" fill="#ffccd5" />
+                    <path d="M 100,100 C 135,135 150,175 100,175 C 50,175 65,135 100,100 Z" fill="#f72585" />
+                    <path d="M 100,100 C 65,135 25,175 25,100 C 25,50 65,65 100,100 Z" fill="#ff4d6d" />
+                    <path d="M 100,100 C 75,75 70,45 100,45 C 130,45 125,75 100,100 Z" fill="#ffb3c6" opacity="0.8" />
+                    <path d="M 100,100 C 125,75 155,70 155,100 C 155,130 125,125 100,100 Z" fill="#fff0f3" opacity="0.8" />
+                    <path d="M 100,100 C 125,125 130,155 100,155 C 70,155 75,125 100,100 Z" fill="#ff758f" opacity="0.8" />
+                    <path d="M 100,100 C 75,125 45,130 45,100 C 45,70 75,75 100,100 Z" fill="#ffe5ec" opacity="0.8" />
+                </g>
+                <circle cx="100" cy="100" r="16" fill="url(#center-glow-ltr)" />
+                <circle cx="100" cy="100" r="5" fill="#ffd700" opacity="0.9" />
+            </svg>
+        </div>
+        <div class="floral-deco bottom-left">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="watercolor-blur-lbl" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="5" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                    </filter>
+                    <radialGradient id="center-glow-lbl" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#ffd700" stop-opacity="0.9"/>
+                        <stop offset="40%" stop-color="#ffd700" stop-opacity="0.4"/>
+                        <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+                    </radialGradient>
+                </defs>
+                <g opacity="0.6" filter="url(#watercolor-blur-lbl)">
+                    <path d="M 100,100 C 80,60 60,50 45,70 C 35,80 45,95 100,100 Z" fill="#6b8e23" />
+                    <path d="M 100,100 C 120,60 140,50 155,70 C 165,80 155,95 100,100 Z" fill="#556b2f" />
+                    <path d="M 100,100 C 60,120 50,140 70,155 C 80,165 95,155 100,100 Z" fill="#8fbc8f" />
+                    <path d="M 100,100 C 140,120 150,140 130,155 C 120,165 105,155 100,100 Z" fill="#6b8e23" />
+                </g>
+                <g opacity="0.75" filter="url(#watercolor-blur-lbl)">
+                    <path d="M 100,100 C 65,65 50,25 100,25 C 150,25 135,65 100,100 Z" fill="#ff85a2" />
+                    <path d="M 100,100 C 135,65 175,50 175,100 C 175,150 135,135 100,100 Z" fill="#ffccd5" />
+                    <path d="M 100,100 C 135,135 150,175 100,175 C 50,175 65,135 100,100 Z" fill="#f72585" />
+                    <path d="M 100,100 C 65,135 25,175 25,100 C 25,50 65,65 100,100 Z" fill="#ff4d6d" />
+                    <path d="M 100,100 C 75,75 70,45 100,45 C 130,45 125,75 100,100 Z" fill="#ffb3c6" opacity="0.8" />
+                    <path d="M 100,100 C 125,75 155,70 155,100 C 155,130 125,125 100,100 Z" fill="#fff0f3" opacity="0.8" />
+                    <path d="M 100,100 C 125,125 130,155 100,155 C 70,155 75,125 100,100 Z" fill="#ff758f" opacity="0.8" />
+                    <path d="M 100,100 C 75,125 45,130 45,100 C 45,70 75,75 100,100 Z" fill="#ffe5ec" opacity="0.8" />
+                </g>
+                <circle cx="100" cy="100" r="16" fill="url(#center-glow-lbl)" />
+                <circle cx="100" cy="100" r="5" fill="#ffd700" opacity="0.9" />
+            </svg>
+        </div>
+
+        <!-- Halftone Dotted Star Background Decorations -->
+        <div class="star-decoration star-left">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <defs>
+                    <pattern id="dotPatternLeft" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+                        <circle cx="4" cy="4" r="2" fill="#ffccd5" opacity="0.5"/>
+                    </pattern>
+                </defs>
+                <path d="M50 0 L63 38 L100 38 L70 62 L82 100 L50 77 L18 100 L30 62 L0 38 L37 38 Z" fill="url(#dotPatternLeft)"/>
+            </svg>
+        </div>
+        <div class="star-decoration star-right">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <defs>
+                    <pattern id="dotPatternRight" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+                        <circle cx="4" cy="4" r="2" fill="#ff85a2" opacity="0.6"/>
+                    </pattern>
+                </defs>
+                <path d="M50 0 L63 38 L100 38 L70 62 L82 100 L50 77 L18 100 L30 62 L0 38 L37 38 Z" fill="url(#dotPatternRight)"/>
+            </svg>
+        </div>
+
+        <div class="letter-container">
+            <!-- Left Side: Letter Content -->
+            <div class="letter-text-column">
+                <h1 class="letter-title">Happy Birthday, Love!</h1>
+                
+                <p class="letter-paragraph">Happy Birthday,</p>
+                
+                <p class="letter-paragraph">You've brought so much light, warmth, and meaning into my life in ways I didn't even expect. <em>The way you laugh, the way you care, even the little things you do—they all stay with me.</em> Being around you makes ordinary moments feel special, and I'm really grateful for that.</p>
+                
+                <p class="letter-paragraph">I hope today reminds you of how loved you are. You deserve happiness that stays, peace that comforts you, and dreams that slowly turn into reality. No matter what happens, I hope you always find your way back to the things that make your heart feel full.</p>
+                
+                <p class="letter-paragraph">Thank you for being you—for your kindness, your strength, and everything in between. I'm really lucky to know you and to share moments with you.</p>
+                
+                <p class="letter-paragraph">Happy birthday again. I hope this year gives you more reasons to smile, more memories to hold onto, and more love than you can imagine.</p>
+                
+                <p class="letter-paragraph letter-signature">Always here for you,</p>
+            </div>
+
+            <!-- Right Side: Overlapping Polaroids -->
+            <div class="letter-photos-column">
+                <div class="letter-polaroid photo-1">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Our Special Moment" class="letter-photo">
+                </div>
+                <div class="letter-polaroid photo-2">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Together Forever" class="letter-photo">
+                </div>
+            </div>
+        </div>
+
+        <!-- Swooping Heart Doodle bottom-right -->
+        <div class="heart-doodle-container">
+            <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                <path class="heart-doodle-path" d="M 50,85 C 40,85 20,70 20,50 C 20,30 35,15 50,30 C 65,15 80,30 80,50 C 80,70 60,85 50,85 C 40,85 45,95 55,95 C 75,95 140,40 180,40" fill="none" stroke="#c9184a" stroke-width="2.5"/>
+            </svg>
+        </div>
+    </section>
+
+    
+
+    <!-- Doraemon Corner -->
+    <section class="doraemon-section">
+        <img src="assets/doraemon.png" alt="Doraemon" class="doraemon-illus">
+        <h2 style="color: #c9184a; margin-bottom: 20px;">Doraemon's Pocket of Love</h2>
+        <p style="max-width: 600px; margin: 0 auto; color: #444;">Just like Doraemon has a gadget for everything, I wish I could give you everything you've ever dreamed of. You are my favorite treasure!</p>
+        
+        <div style="margin-top: 40px; display: flex; justify-content: center; gap: 30px;">
+            <div class="reason-card" style="width: 150px; background: white;">
+                <i class="fas fa-bell" style="color: #ffcc00;"></i>
+                <p>Guardian Angel</p>
+            </div>
+            <div class="reason-card" style="width: 150px; background: white;">
+                <i class="fas fa-door-open" style="color: #ff4757;"></i>
+                <p>Anywhere with You</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <footer>
+        <p>Created with Love specifically for You ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

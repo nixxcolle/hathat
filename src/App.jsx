@@ -5,9 +5,6 @@ import MusicPlayer from './components/MusicPlayer';
 import HeroCarousel from './components/HeroCarousel';
 import MemoryGallery from './components/MemoryGallery';
 import LoveLetter from './components/LoveLetter';
-import AnniversaryTimer from './components/AnniversaryTimer';
-import DoraemonSection from './components/DoraemonSection';
-import FinalSurprise from './components/FinalSurprise';
 import './App.css';
 
 export default function App() {
@@ -41,15 +38,6 @@ export default function App() {
 
       {/* Love Letter */}
       <LoveLetter />
-
-      {/* Anniversary Count-Up Timer */}
-      <AnniversaryTimer />
-
-      {/* Doraemon Section */}
-      <DoraemonSection />
-
-      {/* Final Surprise */}
-      <FinalSurprise />
 
       {/* Footer */}
       <footer>
